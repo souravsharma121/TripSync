@@ -6,7 +6,7 @@
  "scripts": {
     "install-client": "cd client && npm install --force",
     "start": "node server/index.js",
-    "install-all": "npm run install-client && npm run install-server",
+    "install-all": "npm run install-client",
     "build": "npm run install-all"
   },
   "keywords": [],
