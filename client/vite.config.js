@@ -1,11 +1,18 @@
-import { defineConfig } from "vite";
-import react from "@vitejs/plugin-react";
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';
+import path from 'path';
 
 export default defineConfig({
-  server: {
-    proxy: {
-      "/api": "https://walkytalky-r0fb.onrender.com",
+  plugins: [react()],
+  resolve: {
+    alias: {
+      '@': path.resolve(__dirname, './src'),
     },
   },
-  plugins: [react()],
+  build: {
+    sourcemap: true,  // Enable sourcemaps for production builds
+  },
+  server: {
+    sourcemap: true,  // Enable sourcemaps for development server
+  }
 });
