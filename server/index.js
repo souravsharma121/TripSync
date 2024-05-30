@@ -51,11 +51,11 @@ export const instance = new Razorpay ({
 // ---------------deployment-----------------//
 const __dirname1 = path.resolve();
 if (process.env.NODE_ENV === 'production') {
-  const staticPath = path.join(__dirname1, '../TripSync-main/client', 'dist');
+  const staticPath = path.join(__dirname1, '../TripSync-main/TripSync-main/client', 'dist');
   console.log('Static Path:', staticPath); 
   app.use(express.static(staticPath));
   app.get('*', (req, res) => {
-    const indexPath = path.resolve(__dirname1, '../TripSync-main/client', 'dist', 'index.html');
+    const indexPath = path.resolve(__dirname1, '../TripSync-main/TripSync-main/client', 'dist', 'index.html');
     console.log('Index Path:', indexPath); 
     res.sendFile(indexPath);
   });
