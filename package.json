@@ -3,12 +3,13 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
- "scripts": {
+"scripts": {
     "install-client": "cd client && npm install --force",
     "start": "node server/index.js",
+    "build-client": "cd client && npm run build",
     "install-server": "cd server && npm install --force",
     "install-all": "npm run install-client && npm run install-server",
-    "build": "npm run install-all"
+    "build": "npm run install-all && npm run build-client"
   },
   "keywords": [],
   "author": "",
