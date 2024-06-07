@@ -35,7 +35,7 @@ const Profile = () => {
   })
 
   const onSubmit = async (newData) => {
-    console.log(`${apiUri}/users/${user.user._id}`)
+    // console.log(`${apiUri}/users/${user.user._id}`)
     try {
         await axios.post(`${apiUri}/users/${user.user._id}`, {
         name: newData.name,
