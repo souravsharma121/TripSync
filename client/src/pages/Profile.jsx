@@ -22,10 +22,10 @@ const apiUri = URL
 const Profile = () => {
   const {user} = useContext(AuthContext)
 
-  console.log(user)
   const [rideDeleteMode, setRideDeleteMode] = useState(false)
   const [editMode, setEditMode] = useState(false)
   const {loading, data, refetch} = useFetch(`users/${user.user._id}`, true)
+  console.log(data)
   
   const { control, handleSubmit, reset } = useForm({
     defaultValues: {
