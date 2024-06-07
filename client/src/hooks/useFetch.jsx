@@ -1,7 +1,7 @@
 import axios from "axios"
 import { useEffect, useState } from "react"
-const baseURL = 'http://localhost:5000/api';
-console.log(baseURL)
+import URL from "@/utils/url"
+const baseURL = URL
 const useFetch = (endpoint, includeCredentials = false) => {
   const [loading, setLoading] = useState(false)
   const [data, setData] = useState(null)
