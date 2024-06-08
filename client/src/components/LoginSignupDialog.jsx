@@ -11,6 +11,7 @@ import logo from "../assets/logo.png"
 import URL from "@/utils/url"
 import { GiConsoleController } from "react-icons/gi"
 const apiUri = URL
+console.log(URL)
 const LoginSignupDialog = () => {
   const { loading, error, dispatch } = useContext(AuthContext);
   const [loginData, setLoginData] = useState({ email: "", password: "" });
