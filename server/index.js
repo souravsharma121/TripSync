@@ -26,7 +26,7 @@ const connectDB = (url) => {
 
 //middlewares
 app.use(cors({
-  origin: 'http://localhost:5173',
+  origin: 'https://tripsync.onrender.com',
   credentials: true,
   allowedMethods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'OPTIONS']
 }
