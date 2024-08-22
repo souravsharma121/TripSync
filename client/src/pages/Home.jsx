@@ -16,9 +16,7 @@ const Home = () => {
       <GoogleMaps />
       <Features />
       <About />
-      <Team />
       </div>
-      {/* <Testimonial /> */}
     </>
   )
 }
