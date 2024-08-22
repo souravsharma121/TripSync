@@ -51,7 +51,7 @@ const { darkMode } = useDarkMode();
 
   return (
    <>
-    <Box
+{/*     <Box
         display="flex"
         flexDirection="column"
         justifyContent="center"
@@ -236,7 +236,7 @@ const { darkMode } = useDarkMode();
       </CardContent>
     </Card>
     </Box>
-    </Box>
+    </Box> */}
 
    </>
   );
